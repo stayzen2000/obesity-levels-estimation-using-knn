@@ -67,7 +67,6 @@ healthcare-knn-project/
 │   ├── 04_cross_validation.ipynb
 │
 ├── results/
-│   ├── plots/                    # CV and comparison plots
 │   ├── metrics.json              # Cross-validation results
 │   ├── demo_predictions.json     # Interactive demo outputs
 │
