@@ -66,11 +66,6 @@ healthcare-knn-project/
 │   ├── 03_knn_training.ipynb
 │   ├── 04_cross_validation.ipynb
 │
-├── src/
-│   ├── distance.py               # (optional) distance utilities
-│   ├── knn.py                    # (optional) model helpers
-│   ├── validation.py             # (optional) CV helpers
-│
 ├── results/
 │   ├── plots/                    # CV and comparison plots
 │   ├── metrics.json              # Cross-validation results
