@@ -1,0 +1,87 @@
+{
+    "with_weight_demo": {
+        "demo_input": {
+            "Gender": "Male",
+            "Age": 24,
+            "Height": 1.78,
+            "Weight": 90.0,
+            "family_history_with_overweight": "no",
+            "FAVC": "no",
+            "FCVC": 2.0,
+            "NCP": 3.0,
+            "CAEC": "Sometimes",
+            "SMOKE": "no",
+            "CH2O": 2.0,
+            "SCC": "no",
+            "FAF": 3.0,
+            "TUE": 1.0,
+            "CALC": "no",
+            "MTRANS": "Public_Transportation"
+        },
+        "prediction": "Obesity_Type_I",
+        "neighbor_vote_breakdown": {
+            "Obesity_Type_I": 2,
+            "Overweight_Level_II": 1
+        },
+        "neighbors": [
+            {
+                "neighbor_index": 1224,
+                "distance": 4.12631109364396,
+                "neighbor_label": "Obesity_Type_I"
+            },
+            {
+                "neighbor_index": 1425,
+                "distance": 4.146330710794579,
+                "neighbor_label": "Obesity_Type_I"
+            },
+            {
+                "neighbor_index": 984,
+                "distance": 4.220607144459617,
+                "neighbor_label": "Overweight_Level_II"
+            }
+        ],
+        "disclaimer": "Predicts dataset obesity categories using lifestyle + weight/height proxies. Does NOT measure body composition or provide medical diagnosis."
+    },
+    "without_weight_demo": {
+        "demo_input": {
+            "Gender": "Male",
+            "family_history_with_overweight": "no",
+            "FAVC": "no",
+            "CAEC": "Sometimes",
+            "SMOKE": "no",
+            "SCC": "yes",
+            "CALC": "no",
+            "MTRANS": "Automobile",
+            "Age": 25.0,
+            "Height": 1.75,
+            "FCVC": 2.0,
+            "NCP": 3.0,
+            "CH2O": 2.0,
+            "FAF": 2.0,
+            "TUE": 1.0
+        },
+        "prediction": "Normal_Weight",
+        "neighbor_vote_breakdown": {
+            "Normal_Weight": 2,
+            "Overweight_Level_I": 1
+        },
+        "neighbors": [
+            {
+                "neighbor_index": 297,
+                "distance": 2.90744008105018,
+                "neighbor_label": "Overweight_Level_I"
+            },
+            {
+                "neighbor_index": 406,
+                "distance": 5.484403471800983,
+                "neighbor_label": "Normal_Weight"
+            },
+            {
+                "neighbor_index": 272,
+                "distance": 5.639328884206171,
+                "neighbor_label": "Normal_Weight"
+            }
+        ],
+        "disclaimer": "Predicts dataset obesity categories using lifestyle patterns only. Does NOT measure body composition or provide medical diagnosis."
+    }
+}
